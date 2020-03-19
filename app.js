@@ -10,13 +10,13 @@ $(document).ready(function () {
     }
     $(document).on("click", ".gif-button", function () {
         $("#APIresponse").empty(), $(".gif-button").removeClass("active"), $(this).addClass("active");
-        var t = "http://api.giphy.com/v1/gifs/search?q=" + $(this).attr("data-type") + "&api_key=dc6zaTOxFJmzC&limit=20";
+        var t = "http://api.giphy.com/v1/gifs/search?q=" + $(this).attr("data-type") + "&api_key=dc6zaTOxFJmzC&limit=40";
         $.ajax({
             url: t,
             method: "GET"
         }).then(function (t) {
             for (var a = t.data, i = 0; i < 5; i++) {
-                var e = Math.floor(15 * Math.random()),
+                var e = Math.floor(20 * Math.random()),
                     n = $('<div class="gif-item">'),
                     r = a[e].rating,
                     s = $("<p>").text("Rating: " + r),

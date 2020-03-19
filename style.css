@@ -1,0 +1,35 @@
+#APIresponse {
+  width: 78%;
+}
+
+.gif-item {
+  float: right;
+  padding: 13px;
+}
+
+body {
+  font: 17px verdana;
+  background: rgb(200, 247, 236);
+}
+
+button,
+input[type="submit"] {
+  padding: 7px 21px;
+  margin: 0 12px 12px 0;
+  font-size: 19px;
+  color: #fff;
+  background: #2770f8;
+  border: 0;
+  border-radius: 8px;
+}
+
+form {
+  float: left;
+  width: 28%;
+  padding: 17px;
+}
+
+label {
+  display: block;
+  margin-bottom: 13px;
+}
